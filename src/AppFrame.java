@@ -8,6 +8,7 @@ import javax.swing.*;
 public class AppFrame  extends JFrame{
 	CallPanel panel;
 	CallTitleBar title;
+	CallerNames names;
 	
 	
 	
@@ -30,12 +31,15 @@ public class AppFrame  extends JFrame{
 		panel = new CallPanel();
 		panel.setBorder(BorderFactory.createEmptyBorder());
 		
+		names = new CallerNames();
+		
 		
 		this.add(title,BorderLayout.NORTH);
-		//this.add(panel,BorderLayout.SOUTH);
+		this.add(panel,BorderLayout.SOUTH);
+		this.add(names);
 		
 		
-		//this.setResizable(false);
+		this.setResizable(false);
 		this.setVisible(true);
 		
 	}

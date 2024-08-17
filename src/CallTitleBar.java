@@ -18,11 +18,11 @@ public class CallTitleBar extends JPanel{
 		label.setForeground(Color.pink);
 
 		label.setPreferredSize(new Dimension(200,80));
-		//label.setHorizontalAlignment(JLabel.CENTER);
+		label.setHorizontalAlignment(JLabel.CENTER);
 		
-		//label.setOpaque(true);
 		
-		//this.setBorder(BorderFactory.createEmptyBorder());
+		
+		this.setBorder(BorderFactory.createEmptyBorder());
 		this.add(label);
 	}
 
