@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -6,6 +7,7 @@ import javax.swing.*;
 
 public class AppFrame  extends JFrame{
 	CallPanel panel;
+	CallTitleBar title;
 	
 	
 	
@@ -20,13 +22,16 @@ public class AppFrame  extends JFrame{
 		this.setLocationRelativeTo(null);
 		this.setTitle("Call Tracker Project");
 		
+		title = new CallTitleBar();
+		
 		panel = new CallPanel();
 		
 		
+		this.add(title,BorderLayout.NORTH);
+		//this.add(panel,BorderLayout.SOUTH);
 		
-		this.add(panel);
 		
-		this.setResizable(false);
+		//this.setResizable(false);
 		this.setVisible(true);
 		
 	}

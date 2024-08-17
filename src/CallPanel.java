@@ -9,7 +9,7 @@ import javax.swing.*;
 public class CallPanel extends JPanel {
   
 	JCheckBox checkBox;
-	JLabel label;
+	
 	JTextField textfield;
 	JButton button;
 	
@@ -18,12 +18,7 @@ public class CallPanel extends JPanel {
 		this.setPreferredSize(new Dimension(500,500));
 		this.setLayout(new GridLayout(10,1));
 		
-		label = new JLabel("Call Tracker");
-		label.setFont(new Font("serif", Font.PLAIN, 35));
-		label.setForeground(Color.pink);
-		label.setBackground(Color.black);
-		label.setPreferredSize(new Dimension(500,80));
-		label.setOpaque(true);
+		
 		checkBox = new JCheckBox();
 		
 		textfield = new JTextField();
@@ -37,8 +32,8 @@ public class CallPanel extends JPanel {
 		textfield.add(checkBox);
 		checkBox.setBackground(Color.pink);
 		
-		this.add(label);
-		this.add(button);
+		
+		//this.add(button);
 		//this.add(checkBox);
 		
 	}
