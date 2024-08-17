@@ -17,14 +17,18 @@ public class AppFrame  extends JFrame{
 	
 	AppFrame(){
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(500, 500);
-		this.setLayout(new FlowLayout());
+		this.setSize(400, 700);
+		this.setLayout(new BorderLayout());
 		this.setLocationRelativeTo(null);
 		this.setTitle("Call Tracker Project");
+		this.getContentPane().setBackground(Color.black );
+		
 		
 		title = new CallTitleBar();
+		title.setBorder(BorderFactory.createEmptyBorder());
 		
 		panel = new CallPanel();
+		panel.setBorder(BorderFactory.createEmptyBorder());
 		
 		
 		this.add(title,BorderLayout.NORTH);

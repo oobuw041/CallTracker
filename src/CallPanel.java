@@ -14,9 +14,9 @@ public class CallPanel extends JPanel {
 	JButton button;
 	
 	public CallPanel() {
-		this.setBackground(Color.black);
+		this.setBackground(Color.red);
 		this.setPreferredSize(new Dimension(500,500));
-		this.setLayout(new GridLayout(10,1));
+	//	this.setLayout(new GridLayout(10,1));
 		
 		
 		checkBox = new JCheckBox();
@@ -33,8 +33,10 @@ public class CallPanel extends JPanel {
 		checkBox.setBackground(Color.pink);
 		
 		
+		 this.setBorder(BorderFactory.createEmptyBorder());
 		//this.add(button);
 		//this.add(checkBox);
+		
 		
 	}
 
