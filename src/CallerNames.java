@@ -7,12 +7,13 @@ import javax.swing.*;
 public class CallerNames extends JPanel {
 	JLabel index;
 	JTextField caller;
-	JButton done;
+	JCheckBox done;
 	boolean checked ;
 	
 	public CallerNames() {
 		this.setPreferredSize(new Dimension(40,20));
 		this.setBackground(Color.pink);
+		
 		
 		this.setLayout(new BorderLayout());
 		
@@ -22,31 +23,32 @@ public class CallerNames extends JPanel {
 		index = new JLabel("");
 		index.setPreferredSize(new Dimension(20,20));
 		index.setHorizontalAlignment(JLabel.CENTER);
-		 this.add(index, BorderLayout.WEST);
+		this.add(index, BorderLayout.WEST);
 		 
-		 caller = new JTextField("Your task here");
+		 caller = new JTextField("Add Caller");
 		 caller.setBorder(BorderFactory.createEmptyBorder());
 		 caller.setBackground(Color.pink);
 		 
 		 this.add(caller, BorderLayout.CENTER);
 		 
-		 done = new JButton("done");
+		 done = new JCheckBox();
 		 done.setPreferredSize(new Dimension(80,40));
 		 caller.setBorder(BorderFactory.createEmptyBorder());
 		 
-		 this.add(done, BorderLayout.EAST);
+		 this.add(done, BorderLayout.WEST);
 		 
 	}
-	public JButton getDone() {
+	public JCheckBox getDone() {
 		return done;
 	}
-	public void changeIndex(int num) {
+	
+	/*public void changeIndex(int num) {
 		this.index.setText(num+"");
 		this.revalidate();
 	}
+	*/
 	
-	
-	public void changeState() { //when you click on the done button
+	public void moveDown() { //when you click on the done button it moves it to the bottom
 		this.setBackground(Color.green);
 		caller.setBackground(Color.green);
 		checked = true;

@@ -20,21 +20,17 @@ public class CallPanel extends JPanel {
 		
 		
 		checkBox = new JCheckBox();
+	     button = new JButton();
 		
 		textfield = new JTextField();
 	    textfield.setPreferredSize(new Dimension(400,500));
 		 textfield.setBackground(Color.white);
 		
 		
-		button = new JButton();
-		//button.add(checkBox);
-		textfield.add(checkBox);
-		checkBox.setBackground(Color.pink);
-		
+			
 		
 		 this.setBorder(BorderFactory.createEmptyBorder());
-		 this.add(button);
-		// this.add(checkBox);
+		// this.add(button);
 		
 		
 	}

@@ -32,14 +32,15 @@ public class AppFrame  extends JFrame{
 		panel.setBorder(BorderFactory.createEmptyBorder());
 		
 		names = new CallerNames();
+		names.setBorder(BorderFactory.createEmptyBorder());
 		
 		
 		this.add(title,BorderLayout.NORTH);
 		this.add(panel,BorderLayout.SOUTH);
-		this.add(names);
+		this.add(names,BorderLayout.CENTER);
 		
 		
-		this.setResizable(false);
+		//this.setResizable(false);
 		this.setVisible(true);
 		
 	}
